@@ -1,4 +1,4 @@
-/* FILEPATH: /Users/abubu/Desktop/odin project/javascript excersises/objects/toshokan.css */
+
 
 /* Reset default styles */
 html, body {
@@ -6,4 +6,51 @@ html, body {
     padding: 0;
 }
 
-/* Add your custom styles below */
+/* header */
+.header {
+    border: #ff0000 solid 4px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+  
+.header-left {
+
+    margin-right: auto;
+    margin-left: 10px;
+}
+
+.header-right {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.bookContainer{
+    margin: 30px;
+    display: grid;
+    grid-gap: 20px 20px;
+    grid-template: repeat(auto-fit, 200px) / repeat(3, minmax(200px, 1fr));
+    grid-auto-rows: 200px;
+    padding: 10px;
+    
+}
+
+.bookCardContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 10px;
+}
+.bookCard{
+
+}
+
+
+.addBook {
+    display: none;
+}

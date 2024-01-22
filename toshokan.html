@@ -8,27 +8,32 @@
 </head>
 <body>
     <div class="header">
-        
         <div class="header-left">
-            <a href="toshokan.php">図書館</a>
+            <h2>図書館</h2>
         </div>
-        <div class="header-right">
-            <a href="login.php">ログイン</a>
-            <h1>追加</h1>
-    </div>
+        <div class="header-right"> 
+            <h2>追加</h2>
+
+        </div>
     </div>
 
 <div class="main">
     <div class="bookContainer">
-
+<div class="bookCardContainer">
+    <div class="bookCard">
+        whats this
+    </div>
+    </div>
+    
     </div>
     <div class="addBook">
-        <form action="toshokan.php" method="post">
+        <form  method="post">
             <input type="text" name="title" placeholder="タイトル">
             <input type="text" name="author" placeholder="著者">
-
             <input type="text" name="page" placeholder="ページ数">
-            <input type="radio" name="status" value="読んだ">読んだのか
+            <label>
+                <input type="radio" name="status" value="読んだ">読んだのか
+            </label>
             <input type="submit" value="追加">
         </form>
     </div>
