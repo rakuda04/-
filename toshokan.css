@@ -4,15 +4,35 @@
 html, body {
     margin: 0;
     padding: 0;
+    background-color: #231123;
+}
+
+.main{
+    color: #FFFFF0;
+    border: #FFFFF0;
+    
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.bookCardContainer {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.addBook {
+    font-family: 'Lato', sans-serif;
 }
 
 /* header */
 .header {
-    border: #ff0000 solid 4px;
     padding: 5px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    background-color: #BDFFFD;
+    box-shadow: 0px 8px 8px -6px rgba(255, 255, 255, 0.2);
 }
 
 
@@ -43,14 +63,39 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
+    border: 3px solid #FFFFF0;
     padding: 10px;
+background-color: #82204A;
+box-shadow: #f5f5f5 0px 0px 10px 0px;
+border-radius: 20px;
 }
 .bookCard{
-
+display: flex;
+flex-direction: column;
 }
 
 
 .addBook {
     display: none;
 }
+
+
+.v-divider{
+    border-left: 2px solid #FFFFF0;
+    height: 100px;
+    margin: 0 10px;
+}
+
+.h-divider{
+    border-top: 2px solid #FFFFF0;
+    width: 100%;
+    margin: 10px 0;
+}
+
+
+
+/*
+celeste :#BDFFFD
+dark purple :#231123
+murrey :#82204A
+*/
