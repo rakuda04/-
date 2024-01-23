@@ -23,14 +23,25 @@
 <div class="bookCardContainer">
     <div class="bookCard">
         
-            <h3>タイトル</h3>
-            <h3>著者</h3>
-            <h3>ページ数</h3>
-            <h3>読んだのか</h3>
+        <div class="bookCardHeader">
+           <div class="bookCardHeaderLeft"> 
+            <div class="bookCardTitle">タイトル</div>
+            <div class="bookCardSubtitle">著者より</div>
+            </div>
+            <div class="bookCardHeaderRight">
+            <h4>ページ数</h4>
+            </div>
+        </div>
+        <div class="h-divider"></div>
+            <div class="bookCardBody">
+                <button type="button" onclick="myFunction()">読んだのか</button>
+                <button type="button" onclick="myFunction()">削除</button>
+            </div>
+<div class="h-divider"></div>
+    <div class="bookCardFooter">進歩状況</div>
+       
     </div>
-        
-    </div>
-    
+</div>
     </div>
     <div class="addBook">
         <form  method="post">
