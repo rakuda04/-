@@ -13,3 +13,11 @@ function book(title, author, pages, read) {
 function addBookToLibrary() {
    this.title = title
 }
+
+function openPopup() {
+    document.getElementsByClassName("sidePopup")[0].style.width = "600px";
+}
+
+function closePopup() {
+    document.getElementsByClassName("sidePopup")[0].style.width = "0";
+}

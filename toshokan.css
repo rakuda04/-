@@ -161,7 +161,58 @@ align-items: flex-start;
     margin: 10px 0;
 }
 
+.sidePopup {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 
+    display: flex; /* Add this */
+    align-items: center; /* Add this */
+    justify-content: center; /* Add this */
+}
+
+.sidePopup a {
+    padding: 8px 8px 0 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidePopup a:hover {
+    color: #f1f1f1;
+}
+
+.sidePopup .closebtn {
+    position: absolute;
+    top: 20px; 
+    right: 20px; 
+    font-size: 36px;
+}
+
+
+.formContainer{
+    height: 300px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #FFFFF0;
+    padding: 10px;
+}
+
+form{
+   
+}
 
 /*
 celeste :#BDFFFD

@@ -13,7 +13,7 @@
             <h2>図書館</h2>
         </div>
         <div class="header-right"> 
-            <h2>追加</h2>
+            <button onclick="openPopup()">追加</button>
 
         </div>
     </div>
@@ -43,23 +43,23 @@
     </div>
 </div>
     </div>
-    <div class="addBook">
-        <form  method="post">
+    <div id="mySidePopup" class="sidePopup">
+        <a href="javascript:void(0)" class="closebtn" onclick="closePopup()">&times;</a>
+        <div class="formContainer">
+            <h3>追加フォーム</h3>
+            <form>
             <input type="text" name="title" placeholder="タイトル">
             <input type="text" name="author" placeholder="著者">
             <input type="text" name="page" placeholder="ページ数">
-            <label>
-                <input type="radio" name="status" value="読んだ">読んだのか
-            </label>
-            <input type="submit" value="追加">
+            <label><input type="radio" name="status" value="読んだ">読んだのか</label>
+            <input type="submit" value="Submit">
         </form>
+        </div>
     </div>
+    
+    
 </div>
 
 </body>
 </html>
 <!-- insperation/goal https://0xabdulkhalid.github.io/plibrary/ -->
-
-<!-- git remote add origin https://github.com/rakuda04/toshokan.git
-git branch -M main
-git push -u origin main -->
