@@ -198,8 +198,8 @@ align-items: flex-start;
 
 
 .formContainer{
-    height: 300px;
-    width: 200px;
+    height: 600px;
+    width: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -224,16 +224,6 @@ body {
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     background-color: #121212;
     color: var(--main-white);
-}
-
-.page-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    height: 100vh;
-    width: 100vw;
 }
 
 
@@ -304,10 +294,12 @@ body {
     background-color: var(--main-dark-grey);
     padding-left: 20px;
     font-size: 20px;
-    transition: .1s var(--main-ease));
+    transition: .1s var(--main-ease);
     outline: none;
     box-sizing: border-box;
+    
 }
+
 
 .standard-input label {
     position: absolute;
@@ -350,6 +342,11 @@ body {
     color: var(--main-blue) !important;
 }
 
+
+.input-container {
+    margin: 20px 0;
+    position: relative;
+}
 /*
 celeste :#BDFFFD
 dark purple :#231123
