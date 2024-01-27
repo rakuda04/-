@@ -167,7 +167,7 @@ align-items: flex-start;
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: #111;
+    background-color: rgba(255, 182, 193, 0.7);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -198,8 +198,11 @@ align-items: flex-start;
 
 
 .formContainer{
-    height: 600px;
-    width: 500px;
+    height: 100%; /* Full height */
+    width: 100%; /* Full width */
+
+    max-width: 400px; /* Maximum width */
+    max-height: 500px; /* Maximum height */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -213,17 +216,18 @@ form{
 }
 
 :root {
-    --main-blue: #90caf9;
-    --main-white: #fff;
-    --main-grey: rgba(255, 255, 255, 0.23);
-    --main-dark-grey: #121212;
+    --main-blue: rgba(130, 32, 74, 0.5);
+    --main-white: #231123;
+    --main-grey: #231123;
+    --main-dark-grey: rgba(255, 182, 193);
     --main-ease: cubic-bezier(.65,.05,.36,1);
 }
 
 body {
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    background-color: #121212;
+
     color: var(--main-white);
+    
 }
 
 
@@ -251,7 +255,7 @@ body {
     left: 5%;
     transform: translateY(-50%);
     background-color: var(--main-dark-grey);
-    color: rgba(255, 255, 255, 0.5);
+    color: #231123;
     text-align: center;
     transition: .2s var(--main-ease);
     font-size: 1.5rem;
@@ -352,3 +356,40 @@ celeste :#BDFFFD
 dark purple :#231123
 murrey :#82204A
 */
+
+
+/* CSS */
+.button-74 {
+  background-color: rgba(255, 182, 193);
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #231123 4px 4px 0 0;
+  color: #231123;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-74:hover {
+  background-color: rgba(255, 202, 212);
+}
+
+.button-74:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}

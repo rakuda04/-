@@ -15,7 +15,7 @@ function addBookToLibrary() {
 }
 
 function openPopup() {
-    document.getElementsByClassName("sidePopup")[0].style.width = "600px";
+    document.getElementsByClassName("sidePopup")[0].style.width = "40vw";
 }
 
 function closePopup() {
