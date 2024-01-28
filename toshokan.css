@@ -233,6 +233,7 @@ body {
 
 /* OUTLINED INPUT STYLES */
 
+
 .outlined-input {
     position: relative;
 }
@@ -392,4 +393,25 @@ murrey :#82204A
     min-width: 120px;
     padding: 0 25px;
   }
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin: 20px 20px;
+}
+
+.outlined-input {
+    position: relative;
+}
+
+.outlined-input input[type="checkbox"] {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.outlined-input label {
+    color: var(--main-white);
+    font-size: 20px;
 }
