@@ -25,7 +25,6 @@
     <div class="bookContainer">
 <div class="bookCardContainer">
     <div class="bookCard">
-        
         <div class="bookCardHeader">
            <div class="bookCardHeaderLeft"> 
             <div class="bookCardTitle">タイトル</div>
@@ -39,19 +38,18 @@
             <div class="bookCardBody">
                 <button type="button" onclick="myFunction()">読んだのか</button>
                 <button type="button" onclick="myFunction()">削除</button>
-                 
             </div>
 <div class="h-divider"></div>
     <div class="bookCardFooter">進歩状況</div>
-       
     </div>
 </div>
+
     </div>
     <div id="mySidePopup" class="sidePopup">
         <a href="javascript:void(0)" class="closebtn" onclick="closePopup()">&times;</a>
         <div class="formContainer">
             <h3>追加フォーム</h3>
-            <form id="sidePopUpForm">
+            <form id="sidePopUpForm" onsubmit="return validateForm()">
                 <div class="input-container">
                 <div class="outlined-input">
                     <input type="text" name="title" placeholder=" ">
@@ -107,7 +105,7 @@
     </div>
 </body>
 </html>
-<!-- change to standard input -->
+
 <!-- insperation/goal https://0xabdulkhalid.github.io/plibrary/ -->
 
 
