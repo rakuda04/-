@@ -14,11 +14,11 @@ function addBookToLibrary() {
     var title = document.getElementsByName("title")[0].value;
     var author = document.getElementsByName("author")[0].value;
     var pages = document.getElementsByName("page number")[0].value;
-
+    var readStatus = document.getElementsByName("read status")[0].value;
     var titleRegex = /^[a-zA-Z0-9\s.,!?'"()]+$/;
     var authorRegex = /^[a-zA-Z\s.,'-]+$/;
     var pagesRegex = /^\d+$/;
-
+    
     if (!titleRegex.test(title)) {
         alert("Title must start with a Capital letter and only contain letters, numbers, and punctuation");
         return;
@@ -43,6 +43,8 @@ function addBookToLibrary() {
 
     
     bookDiv.innerHTML = `
+    <div class="bookCardContainer">
+    <div class="bookCard">
         <div class="bookCardHeader">
             <div class="bookCardHeaderLeft"> 
                 <div class="bookCardTitle">${title}</div>
@@ -55,14 +57,17 @@ function addBookToLibrary() {
         <div class="h-divider"></div>
         <div class="bookCardBody">
             <button type="button" onclick="myFunction()">読んだのか</button>
-            <button type="button" onclick="myFunction()">削除</button>
+            <button type="button" onclick="deleteCard(this)">削除</button>
         </div>
         <div class="h-divider"></div>
         <div class="bookCardFooter">${readStatus}</div>
+    </div>
+</div>
     `;
 
     
-    document.body.appendChild(bookDiv);
+var parent = document.getElementsByClassName('bookContainer')[0];
+parent.appendChild(bookDiv);
 }
 
 var submit = document.getElementById('sidePopUpForm').addEventListener('submit', function(event) {
@@ -77,4 +82,9 @@ function openPopup() {
 
 function closePopup() {
     document.getElementsByClassName("sidePopup")[0].style.width = "0";
+}
+
+function deleteCard(button) {
+    var card = button.closest(".bookCardContainer");
+    card.remove();
 }
