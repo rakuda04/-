@@ -54,6 +54,7 @@ body {
     grid-template: repeat(auto-fit, 200px) / repeat(3, minmax(200px, 1fr));
     padding: 10px;
     grid-auto-flow: dense;
+    grid-template-rows: auto;
 }
 
 .bookCardContainer{
@@ -68,7 +69,6 @@ box-shadow: #f5f5f5 0px 0px 10px 0px;
 border-radius: 20px;
 flex-direction: column;
 align-items: flex-start;
-
 }
 .bookCard {
     width: 100%;

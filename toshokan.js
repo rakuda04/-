@@ -37,7 +37,9 @@ function addBookToLibrary() {
     var newBook = new book(title, author, pages, readStatus);
     myLibrary.push(newBook);
 
-    
+    var bookCardContainer = document.createElement('div');
+    bookCardContainer.className = 'bookCardContainer';
+
     var bookDiv = document.createElement('div');
     bookDiv.className = 'bookCard';
 
@@ -56,7 +58,7 @@ function addBookToLibrary() {
         </div>
         <div class="h-divider"></div>
         <div class="bookCardBody">
-            <button type="button" onclick="myFunction()">読んだのか</button>
+            <button type="button" onclick="changeStatus(this)">読んだのか</button>
             <button type="button" onclick="deleteCard(this)">削除</button>
         </div>
         <div class="h-divider"></div>
@@ -65,6 +67,7 @@ function addBookToLibrary() {
 </div>
     `;
 
+    bookCardContainer.appendChild(bookDiv);
     
 var parent = document.getElementsByClassName('bookContainer')[0];
 parent.appendChild(bookDiv);
@@ -86,5 +89,17 @@ function closePopup() {
 
 function deleteCard(button) {
     var card = button.closest(".bookCardContainer");
-    card.remove();
+    card.remove(); // Remove the card
+
+}
+
+function changeStatus(button) {
+    var card = button.closest(".bookCardContainer");
+    var footer = card.querySelector(".bookCardFooter");
+    var status = footer.innerHTML;
+    if (status == "読んだ") {
+        footer.innerHTML = "読んでない";
+    } else {
+        footer.innerHTML = "読んだ";
+    }
 }
